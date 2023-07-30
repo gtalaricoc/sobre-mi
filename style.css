@@ -1,6 +1,6 @@
-/* Se modifica la página con colores */
+/* Se modifica la página con colores, tamaño y estilo de letra */
 html {
     background-color: rgb(212, 212, 250);
     font-size: 20px;
-
+    font-style: italic;
 }
