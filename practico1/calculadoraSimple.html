@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Simple</title>
+</head>
+
+<body>
+   
+    <div class="calculadora">
+        <p><h1 id="titulo">Calculadora Simple</h1></p>
+        
+        <p><input type="number" id="valor1" placeholder="solo número" required="required" minlength="1"></p>
+        
+        <p><label for="operador">Operación a Seleccionar:</label></p>
+
+        <p><select name="operator" id="operator">
+            <option disabled selected>Elegir una opción</option>
+            <option value="Sumar">Sumar (+)</option>
+            <option value="Restar">Restar (-)</option>
+            <option value="Multiplicar">Multiplicar (*)</option>
+            <option value="Dividir">Dividir (/)</option>
+        </select></p>
+        
+        <input type="number" id="valor2" placeholder="solo número" required="required" minlength="1">
+        
+        <!-- Botón para calcular -->
+        <p><button id="calculate">Calcular</button></p>
+        
+        <!-- Para ver el Resultado -->
+        <p id="result">Resultado: </p>
+               
+        <!-- Se coloca botón para limpiar la calculadora-->
+        <input class="boton" type="button" value="Limpiar" onclick="location.reload()" />
+        
+        <!-- Aqui se conecta html con la plantilla de Javascript -->
+        <script src="calculadora.js"></script>
+    </div>        
+
+</body>
+</html>
