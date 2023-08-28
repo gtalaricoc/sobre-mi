@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego: Piedra, Papel o Tijera!!</title>
+</head>
+
+<body>
+    <header>
+    <!-- Nombre del juego y descripción -->
+        <h1>Piedra, Papel o Tijera!!</h1>
+        <p>Ejercicio practico2</p>
+    </header>
+      
+    <main>
+    <!-- Ingreso de Nombre para dar la bienvenida -->
+        <h1>Ingrese su Nombre</h1>
+        <input type="text" id="nombreInput">
+        <button onclick="mostrarMensaje()" class="procesar">Saludar</button>
+        <p id="mensajeBienvenida"></p>
+    <!-- Subtitulo con instrucciones para ganar -->
+        <p class="instrucciones">
+            <h2>Instrucciones: GANAR 3 PARTIDOS</h2>
+        </p>
+    <!-- Se crea el Marcador de puntos Jugador y Computadora -->
+        <div class="marcador">
+            <p class="nombre puntosjugador">Jugador</p>
+            <p class="nombre puntospc">Computadora</p>
+            <p class="puntos">
+                <span id="puntosjugador">0</span>
+                <span>-</span>
+                <span id="puntospc">0</span>
+            </p>
+        </div>
+    <!-- Se generan los botones de Piedra, Papel o Tijera -->
+        <div class="seleccionaOpcion" id="seleccionaOpcion">
+            <h2>Elige tu Figura</h2>
+            <div class="opciones">
+                <button class="opcion" id="Piedra"><img src="./Imagenes/piedra.png" alt="piedra" width="60px" height="60px"></button>
+                <button class="opcion" id="Papel"><img src="./Imagenes/papel.png" alt="papel" width="60px" height="60px"></button>
+                <button class="opcion" id="Tijera"><img src="./Imagenes/tijera.png" alt="tijera" width="60px" height="60px"></button>
+            </div>
+        </div>
+    <!-- Mensajes de seleccion de Jugada del Jugador y de la Computadora -->
+        <div class="mensaje" id="mensaje">
+            <p>
+                <h2>Usaste <span class="eleccion" id="eleccionJugador"> -- </span><br></h2>
+                <h2>Pc usó <span class="eleccion" id="eleccionPc"> -- </span></h2>
+            </p>
+            <p id="punto">¡Que empiece el Juego!</p>
+        </div>
+        <!-- Botón de reiniciar partida a valores de 0 -->
+        <button class="reiniciar" id="reiniciar">reiniciar</button>
+    </main>
+    <!-- Link con plantilla Javascript -->
+    <script src="piedraPapelTijera.js"></script>
+</body>
+</html>
